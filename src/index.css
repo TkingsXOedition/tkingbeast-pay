@@ -38,29 +38,43 @@ All colors MUST be HSL.
 
     --radius: 0.75rem;
 
-    /* Custom crypto wallet theme */
-    --crypto-dark: 0 0% 3%;
-    --crypto-card: 0 0% 8%;
-    --crypto-purple: 280 100% 60%;
-    --crypto-purple-glow: 280 100% 70%;
-    --crypto-red: 0 70% 35%;
-    --crypto-red-glow: 0 70% 45%;
-    --crypto-text: 0 0% 95%;
-    --crypto-text-muted: 0 0% 60%;
+    /* Professional LED crypto theme */
+    --crypto-dark: 0 0% 2%;
+    --crypto-card: 0 0% 6%;
+    --crypto-glass: 0 0% 10%;
+    --crypto-border: 0 0% 15%;
     
-    /* Gradients */
-    --gradient-purple: linear-gradient(135deg, hsl(280 100% 60%), hsl(280 100% 70%));
-    --gradient-red: linear-gradient(135deg, hsl(0 70% 35%), hsl(0 70% 45%));
-    --gradient-dark: linear-gradient(135deg, hsl(0 0% 8%), hsl(0 0% 12%));
+    /* LED Color Palette */
+    --neon-cyan: 180 100% 50%;
+    --neon-purple: 280 100% 65%;
+    --neon-pink: 320 100% 70%;
+    --neon-blue: 240 100% 60%;
+    --neon-green: 120 100% 50%;
+    --electric-purple: 275 100% 60%;
+    --electric-blue: 215 100% 65%;
     
-    /* Shadows and effects */
-    --shadow-purple: 0 10px 30px -10px hsl(280 100% 60% / 0.3);
-    --shadow-red: 0 10px 30px -10px hsl(0 70% 35% / 0.3);
-    --shadow-glow: 0 0 40px hsl(280 100% 60% / 0.2);
+    /* Text Colors */
+    --crypto-text: 0 0% 98%;
+    --crypto-text-secondary: 0 0% 85%;
+    --crypto-text-muted: 0 0% 65%;
+    --crypto-text-accent: 280 100% 85%;
     
-    /* Transitions */
-    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    --transition-bounce: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    /* LED Gradients */
+    --gradient-neon: linear-gradient(135deg, hsl(180 100% 50%), hsl(280 100% 65%), hsl(320 100% 70%));
+    --gradient-electric: linear-gradient(135deg, hsl(275 100% 60%), hsl(215 100% 65%));
+    --gradient-glass: linear-gradient(135deg, hsl(0 0% 10% / 0.8), hsl(0 0% 15% / 0.6));
+    --gradient-border: linear-gradient(135deg, hsl(180 100% 50% / 0.5), hsl(280 100% 65% / 0.5));
+    
+    /* Professional Shadows */
+    --shadow-neon: 0 0 30px hsl(180 100% 50% / 0.3), 0 0 60px hsl(180 100% 50% / 0.1);
+    --shadow-purple: 0 0 30px hsl(280 100% 65% / 0.4), 0 0 60px hsl(280 100% 65% / 0.1);
+    --shadow-electric: 0 8px 32px hsl(275 100% 60% / 0.25);
+    --shadow-glass: 0 8px 32px rgba(0, 0, 0, 0.4);
+    
+    /* Advanced Transitions */
+    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    --transition-glow: all 0.3s ease-in-out;
 
     --sidebar-background: 0 0% 98%;
 

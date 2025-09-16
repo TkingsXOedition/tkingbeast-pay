@@ -57,16 +57,27 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
-        // Custom crypto wallet colors
+        // Professional LED crypto colors
         crypto: {
           dark: "hsl(var(--crypto-dark))",
           card: "hsl(var(--crypto-card))",
-          purple: "hsl(var(--crypto-purple))",
-          "purple-glow": "hsl(var(--crypto-purple-glow))",
-          red: "hsl(var(--crypto-red))",
-          "red-glow": "hsl(var(--crypto-red-glow))",
+          glass: "hsl(var(--crypto-glass))",
+          border: "hsl(var(--crypto-border))",
           text: "hsl(var(--crypto-text))",
+          "text-secondary": "hsl(var(--crypto-text-secondary))",
           "text-muted": "hsl(var(--crypto-text-muted))",
+          "text-accent": "hsl(var(--crypto-text-accent))",
+        },
+        neon: {
+          cyan: "hsl(var(--neon-cyan))",
+          purple: "hsl(var(--neon-purple))",
+          pink: "hsl(var(--neon-pink))",
+          blue: "hsl(var(--neon-blue))",
+          green: "hsl(var(--neon-green))",
+        },
+        electric: {
+          purple: "hsl(var(--electric-purple))",
+          blue: "hsl(var(--electric-blue))",
         },
       },
       borderRadius: {
@@ -101,11 +112,40 @@ export default {
             transform: "translateY(0)",
           },
         },
+        "glow-pulse": {
+          "0%, 100%": {
+            opacity: "0.8",
+            filter: "brightness(1)",
+          },
+          "50%": {
+            opacity: "1",
+            filter: "brightness(1.2)",
+          },
+        },
+        "neon-flicker": {
+          "0%, 100%": { opacity: "1" },
+          "2%": { opacity: "0.8" },
+          "4%": { opacity: "1" },
+          "8%": { opacity: "0.9" },
+          "10%": { opacity: "1" },
+        },
+        "electric-slide": {
+          "0%": { transform: "translateX(-100%)" },
+          "100%": { transform: "translateX(100%)" },
+        },
+        "glass-shine": {
+          "0%": { transform: "translateX(-100%) skewX(-25deg)" },
+          "100%": { transform: "translateX(200%) skewX(-25deg)" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         "fade-in-up": "fade-in-up 0.6s ease-out",
+        "glow-pulse": "glow-pulse 2s ease-in-out infinite",
+        "neon-flicker": "neon-flicker 3s ease-in-out infinite",
+        "electric-slide": "electric-slide 2s ease-in-out infinite",
+        "glass-shine": "glass-shine 3s ease-in-out infinite",
       },
     },
   },
