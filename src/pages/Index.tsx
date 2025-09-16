@@ -10,7 +10,7 @@ const Index = () => {
     {
       name: "BNB Smart Chain",
       address: "0x0a3f49f13baf95995fbbf595d00aeac6b90d102d",
-      logo: bnbLogo,
+      logo: BnbLogo,
       network: "BSC",
     },
     {
