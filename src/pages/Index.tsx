@@ -1,5 +1,5 @@
 import { WalletCard } from "@/components/WalletCard";
-import bnbLogo from "@/assets/bnb-logo.png";
+import BnbLogo from "@/assets/bnb-logo.png";
 import tronLogo from "@/assets/tron-logo.png";
 import polygonLogo from "@/assets/polygon-logo.png";
 import aptosLogo from "@/assets/aptos-logo.png";
