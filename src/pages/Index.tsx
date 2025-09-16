@@ -61,43 +61,43 @@ const Index = () => {
         {/* Enhanced Header */}
         <div className="text-center mb-16">
           <div className="relative inline-block">
-            {/* Main title with enhanced effects */}
-            <h1 className="text-5xl md:text-7xl lg:text-8xl font-black bg-gradient-to-r from-neon-cyan via-neon-purple via-neon-pink to-electric-blue bg-clip-text text-transparent mb-6 animate-neon-flicker tracking-wider relative z-10">
+            {/* Main title with refined contrast */}
+            <h1 className="text-5xl md:text-7xl lg:text-8xl font-black bg-gradient-to-r from-crypto-text-secondary via-crypto-text-accent to-crypto-text-secondary bg-clip-text text-transparent mb-6 tracking-wider relative z-10">
               TKINGBEAST
             </h1>
             
-            {/* Title glow effect */}
-            <div className="absolute inset-0 text-5xl md:text-7xl lg:text-8xl font-black text-neon-purple opacity-30 blur-sm animate-glow-pulse">
+            {/* Subtle title glow effect */}
+            <div className="absolute inset-0 text-5xl md:text-7xl lg:text-8xl font-black text-neon-purple/20 blur-lg animate-glow-pulse">
               TKINGBEAST
             </div>
             
-            {/* Animated underline */}
-            <div className="relative h-2 w-full mb-8">
-              <div className="absolute inset-0 bg-gradient-to-r from-neon-cyan via-neon-purple to-neon-pink rounded-full animate-electric-slide"></div>
-              <div className="absolute inset-0 bg-gradient-to-r from-electric-purple to-electric-blue rounded-full opacity-60 blur-sm"></div>
+            {/* Refined underline */}
+            <div className="relative h-1 w-full mb-8">
+              <div className="absolute inset-0 bg-gradient-to-r from-crypto-text-muted via-neon-purple/60 to-crypto-text-muted rounded-full"></div>
+              <div className="absolute inset-0 bg-gradient-to-r from-electric-purple/30 to-electric-blue/30 rounded-full opacity-40 blur-sm"></div>
             </div>
           </div>
           
-          {/* Enhanced subtitle */}
+          {/* Refined subtitle */}
           <div className="relative max-w-3xl mx-auto">
-            <div className="bg-gradient-to-br from-crypto-glass/40 via-crypto-card/60 to-crypto-glass/40 backdrop-blur-xl rounded-2xl border border-neon-purple/30 p-6 shadow-[0_0_40px_rgba(168,85,247,0.2)]">
-              <p className="text-xl md:text-2xl font-bold text-crypto-text mb-2">
-                ⚡ <span className="bg-gradient-to-r from-neon-cyan to-neon-purple bg-clip-text text-transparent">USDT Payment Hub</span> ⚡
+            <div className="bg-gradient-to-br from-crypto-glass/30 via-crypto-card/50 to-crypto-glass/30 backdrop-blur-xl rounded-2xl border border-crypto-border/40 p-6 shadow-[0_0_20px_rgba(168,85,247,0.1)]">
+              <p className="text-xl md:text-2xl font-bold text-crypto-text-secondary mb-2">
+                ⚡ <span className="bg-gradient-to-r from-crypto-text-accent to-neon-purple/80 bg-clip-text text-transparent">USDT Payment Hub</span> ⚡
               </p>
               <div className="flex items-center justify-center space-x-4 text-lg md:text-xl">
                 <span className="flex items-center space-x-2">
-                  <div className="w-2 h-2 bg-neon-green rounded-full animate-pulse"></div>
-                  <span className="text-neon-cyan font-semibold">Fast</span>
+                  <div className="w-2 h-2 bg-neon-green/60 rounded-full animate-pulse"></div>
+                  <span className="text-crypto-text-accent font-medium">Fast</span>
                 </span>
                 <span className="text-crypto-text-muted">•</span>
                 <span className="flex items-center space-x-2">
-                  <div className="w-2 h-2 bg-neon-purple rounded-full animate-pulse" style={{ animationDelay: '0.5s' }}></div>
-                  <span className="text-neon-purple font-semibold">Secure</span>
+                  <div className="w-2 h-2 bg-neon-purple/60 rounded-full animate-pulse" style={{ animationDelay: '0.5s' }}></div>
+                  <span className="text-crypto-text-accent font-medium">Secure</span>
                 </span>
                 <span className="text-crypto-text-muted">•</span>
                 <span className="flex items-center space-x-2">
-                  <div className="w-2 h-2 bg-neon-pink rounded-full animate-pulse" style={{ animationDelay: '1s' }}></div>
-                  <span className="text-neon-pink font-semibold">Multi-Chain</span>
+                  <div className="w-2 h-2 bg-electric-blue/60 rounded-full animate-pulse" style={{ animationDelay: '1s' }}></div>
+                  <span className="text-crypto-text-accent font-medium">Multi-Chain</span>
                 </span>
               </div>
             </div>
@@ -120,21 +120,21 @@ const Index = () => {
           ))}
         </div>
 
-        {/* Enhanced Footer */}
+        {/* Refined Footer */}
         <div className="text-center mt-16 py-12">
           <div className="relative inline-block">
-            {/* Glow effect */}
-            <div className="absolute -inset-4 bg-gradient-to-r from-neon-cyan via-neon-purple to-neon-pink rounded-3xl opacity-30 blur-xl animate-glow-pulse"></div>
+            {/* Subtle glow effect */}
+            <div className="absolute -inset-3 bg-gradient-to-r from-crypto-text-muted/20 via-neon-purple/20 to-crypto-text-muted/20 rounded-2xl opacity-40 blur-lg"></div>
             
             {/* Main footer card */}
-            <div className="relative bg-gradient-to-br from-crypto-glass/60 via-crypto-card/80 to-crypto-glass/60 backdrop-blur-xl border border-neon-purple/40 rounded-2xl px-10 py-6 shadow-[0_0_50px_rgba(168,85,247,0.3)]">
-              <p className="text-xl md:text-2xl font-bold bg-gradient-to-r from-neon-cyan via-neon-purple to-neon-pink bg-clip-text text-transparent">
+            <div className="relative bg-gradient-to-br from-crypto-glass/40 via-crypto-card/60 to-crypto-glass/40 backdrop-blur-xl border border-crypto-border/30 rounded-xl px-8 py-4 shadow-[0_0_20px_rgba(168,85,247,0.1)]">
+              <p className="text-lg md:text-xl font-semibold text-crypto-text-secondary">
                 📌 Tap • Copy • Share 🚀
               </p>
-              <div className="mt-2 flex justify-center space-x-2">
-                <div className="w-1 h-1 bg-neon-cyan rounded-full animate-ping"></div>
-                <div className="w-1 h-1 bg-neon-purple rounded-full animate-ping" style={{ animationDelay: '0.3s' }}></div>
-                <div className="w-1 h-1 bg-neon-pink rounded-full animate-ping" style={{ animationDelay: '0.6s' }}></div>
+              <div className="mt-1 flex justify-center space-x-2">
+                <div className="w-1 h-1 bg-crypto-text-muted rounded-full animate-pulse opacity-60"></div>
+                <div className="w-1 h-1 bg-crypto-text-muted rounded-full animate-pulse opacity-60" style={{ animationDelay: '0.5s' }}></div>
+                <div className="w-1 h-1 bg-crypto-text-muted rounded-full animate-pulse opacity-60" style={{ animationDelay: '1s' }}></div>
               </div>
             </div>
           </div>
