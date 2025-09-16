@@ -57,6 +57,17 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        // Custom crypto wallet colors
+        crypto: {
+          dark: "hsl(var(--crypto-dark))",
+          card: "hsl(var(--crypto-card))",
+          purple: "hsl(var(--crypto-purple))",
+          "purple-glow": "hsl(var(--crypto-purple-glow))",
+          red: "hsl(var(--crypto-red))",
+          "red-glow": "hsl(var(--crypto-red-glow))",
+          text: "hsl(var(--crypto-text))",
+          "text-muted": "hsl(var(--crypto-text-muted))",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -80,10 +91,21 @@ export default {
             height: "0",
           },
         },
+        "fade-in-up": {
+          from: {
+            opacity: "0",
+            transform: "translateY(30px)",
+          },
+          to: {
+            opacity: "1",
+            transform: "translateY(0)",
+          },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "fade-in-up": "fade-in-up 0.6s ease-out",
       },
     },
   },
