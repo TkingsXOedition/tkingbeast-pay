@@ -109,10 +109,11 @@ export const WalletCard = ({ name, address, logo, network }: WalletCardProps) =>
         {/* Enhanced copy button */}
         <Button
           onClick={copyToClipboard}
-          className={`w-full relative overflow-hidden bg-gradient-to-r from-electric-purple via-electric-blue to-electric-purple text-white font-bold py-4 rounded-xl border border-electric-purple/50 shadow-lg transition-all duration-300 hover:shadow-[0_0_30px_rgba(168,85,247,0.5)] hover:scale-[1.02] active:scale-[0.98] group-hover:border-neon-purple ${
+          className={`w-full relative overflow-hidden bg-gradient-to-r from-electric-purple via-electric-blue to-electric-purple text-white font-bold py-4 rounded-xl border border-electric-purple/50 shadow-lg transition-all duration-300 hover:shadow-[0_0_30px_rgba(168,85,247,0.5)] hover:scale-[1.02] active:scale-[0.98] group-hover:border-neon-purple select-none ${
             copied ? 'from-neon-green via-neon-cyan to-neon-green' : ''
           }`}
           disabled={copied}
+          style={{ userSelect: 'none', WebkitUserSelect: 'none' }}
         >
           {/* Button shine effect */}
           <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-500 animate-electric-slide"></div>

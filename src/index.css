@@ -103,9 +103,69 @@ All colors MUST be HSL.
 @layer base {
   * {
     @apply border-border;
+    /* Prevent text selection and copying */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -webkit-tap-highlight-color: transparent;
   }
 
   body {
     @apply bg-background text-foreground;
+    /* Disable right-click context menu and drag */
+    -webkit-context-menu: none;
+    -moz-context-menu: none;
+    context-menu: none;
+    -webkit-user-drag: none;
+    -moz-user-drag: none;
+    user-drag: none;
   }
+
+  /* Disable image dragging */
+  img {
+    -webkit-user-drag: none;
+    -moz-user-drag: none;
+    user-drag: none;
+  }
+
+  /* Custom animation keyframes */
+  @keyframes glow-pulse {
+    0%, 100% { opacity: 0.3; transform: scale(1); }
+    50% { opacity: 0.6; transform: scale(1.02); }
+  }
+
+  @keyframes glass-shine {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+  }
+
+  @keyframes electric-slide {
+    0% { transform: translateX(-200%); }
+    100% { transform: translateX(200%); }
+  }
+
+  @keyframes neon-flicker {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.8; }
+  }
+
+  @keyframes fade-in-up {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Apply animations */
+  .animate-glow-pulse { animation: glow-pulse 3s ease-in-out infinite; }
+  .animate-glass-shine { animation: glass-shine 2s ease-in-out infinite; }
+  .animate-electric-slide { animation: electric-slide 1.5s ease-in-out infinite; }
+  .animate-neon-flicker { animation: neon-flicker 2s ease-in-out infinite; }
+  .animate-fade-in-up { animation: fade-in-up 0.6s ease-out; }
 }
